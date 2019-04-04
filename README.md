@@ -4,3 +4,4 @@
 ### 참고 영상 및 자료 Link
 
 * [프라이빗 블록체인 하이퍼레저를 공부해보자!](https://www.youtube.com/watch?v=smytS8dQCtk&feature=youtu.be)
+* [Hyperledger Doc](https://hyperledger-fabric.readthedocs.io/en/release-1.1/)

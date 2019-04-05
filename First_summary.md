@@ -31,5 +31,33 @@
 + Security & Membership services
 + Consensus
   
+## 1. System Architecture
+  > [Link](https://hyperledger-fabric.readthedocs.io/en/release-1.1/arch-deep-dive.html#system-architecture)
+### 1.1 Transactions
+> blockchain을 변화시키는 모든 것은 transaction에 포함
+
++ Deploy : Chaincode를 blockchain에 넣는 것. ( smartcontract deploy 라고 생각하면 될듯 )
++ Invoke : 내가 이미 있는 chaincode에 맞춰서 chain들을 쌓는 것
+
+### 1.2 Ledger
+
++ 지금까지 어떤 상태로 배포가 되어있는가, history가 어떻게 되어있는가
+```
+OrdererLedger
+PeerLedger
+```
+
+### 1.3 Nodes
+
++ 어떤 Component들이 있는가.
+  + Client OR submitting-client : end user 입장에서 chaincode를 호출하기 위해 요청
+  + Peer : Node 중에서 ledger들을 수정하고 관리
+  + Ordering-service-node OR orderer : ledger를 업데이트 하는 Peer들을 관리. 분산이지만 순서를 결정
+    > 1.0에 새로 업데이트
+
+
+## 2. Basic workflow of transaction endorsement
+  > [Link](https://hyperledger-fabric.readthedocs.io/en/release-1.1/arch-deep-dive.html#basic-workflow-of-transaction-endorsement)
+
 
 

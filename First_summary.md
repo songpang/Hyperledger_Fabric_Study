@@ -59,5 +59,22 @@ PeerLedger
 ## 2. Basic workflow of transaction endorsement
   > [Link](https://hyperledger-fabric.readthedocs.io/en/release-1.1/arch-deep-dive.html#basic-workflow-of-transaction-endorsement)
 
+*blockchain의 근간 : 이전 block의 hash값을 다음 block으로 가져감*
+
+
+## 3. Endorsement policies
+  > [Link](https://hyperledger-fabric.readthedocs.io/en/release-1.1/arch-deep-dive.html#endorsement-policies)
+
++ 노드의 가용성 확보를 위한 policy
++ 전체 노드의 정상적인 운용이 가능하지 않은 상황의 경우가 항상 발생할 수 있기 때문에 설정한다.
+```
+E = {Alice, Bob, Charlie, Dave, Eve, Frank, George}
+
+(Alice OR Bob) AND (any two of: Charlie, Dave, Eve, Frank, George)
+// Alice, Charlie, Eve -> OK
+```
+
+
+
 
 
